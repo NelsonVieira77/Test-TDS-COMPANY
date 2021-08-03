@@ -1,0 +1,82 @@
+<app-button-back (click)="voltar()"></app-button-back>
+
+<div class="tela-inicial">
+    <h1>Dallol</h1>
+    <p><strong>{{weather}}</strong></p>
+    <div *ngIf="rain == false">
+        <i class="fa fa-cloud-rain"></i>
+    </div>
+</div>
+
+<div id="divWeatherMain">
+
+    <div class="weatherWidgetRow" style="font-size: 70px;margin-top: 5px;">{{WeatherData.temp_celcius}}
+        <!--<div class="weatherWidgetColum" style="font-size: 12px;">-->
+        <div class="weatherWidgetColum">
+            <p>°<strong>C</strong></p>
+            <p style="font-size: 15px;margin-top: 5px;"><i class="fa fa-arrow-up"></i>{{WeatherData.temp_max}}°</p>
+            <p style="font-size: 15px;"><i class="fa fa-arrow-down"></i>{{WeatherData.temp_min}}° </p>
+        </div>
+    </div>
+
+    <div *ngIf="clouds" class="weatherWidgetRow cloudDiv">
+        <i class="fa fa-cloud cloud"></i>
+    </div>
+
+    <div *ngIf="rain" class="weatherWidgetRow">
+        <i class="fa fa-sun sun"></i>
+    </div>
+    <!--<div class="weatherWidgetRow" style="font-size: 12px;">Feels Like: {{WeatherData.temp_feels_like}}°</div>-->
+    <!--<div class="weatherWidgetRow" style="font-size: 12px;">Humidity: {{WeatherData.main.humidity}}%</div>-->
+</div>
+
+<div class="schedules">
+    <h6>dawn</h6>
+    <h6>morning</h6>
+    <h6>afternoon</h6>
+    <h6>night</h6>
+</div>
+
+<div class="schedules-icons">
+    <img src="https://img.icons8.com/ios/50/000000/heavy-rain.png" />
+    <img src="https://img.icons8.com/material-outlined/24/000000/sun--v1.png" />
+    <img src="https://img.icons8.com/ios/50/000000/partly-cloudy-day--v1.png" />
+    <img src="https://img.icons8.com/ios/50/000000/partly-cloudy-night--v1.png" />
+</div>
+
+<div class="temperature">
+    <h6>24°C</h6>
+    <h6>25°C</h6>
+    <h6>24°C</h6>
+    <h6>24°C</h6>
+</div>
+
+<div class="grid">
+
+    <li>
+        <h6>Wind speed</h6>
+        <p>{{WeatherData.wind.speed}} m/s</p>
+    </li>
+
+    <hr>
+
+    <li>
+        <h6>sunrise</h6>
+        <p>06:03AM</p>
+    </li>
+
+    <hr>
+
+    <li>
+        <h6>sunset</h6>
+        <p>{{WeatherData.sunset_time}}PM</p>
+    </li>
+
+    <hr>
+
+    <li>
+        <h6>humidify</h6>
+        <p>{{WeatherData.main.humidity}}%</p>
+    </li>
+
+</div>

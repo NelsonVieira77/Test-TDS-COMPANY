@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~font-awesome/css/font-awesome.min.css';
+
+$main-color: rgb(8, 8, 8 );
+
+body{
+   background-color:  $main-color;
+   font-family: 'Montserrat', sans-serif;
+   @if $main-color ==  #BAC5C5{
+      color: rgb(8, 8, 8 );;
+    }
+}
+
+//html, body { height: 100%; }
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

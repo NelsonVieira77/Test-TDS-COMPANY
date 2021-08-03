@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "temp"
+    }
+  },
+  "defaultProject": "temp",
+  "cli": {
+    "analytics": "b6c59d95-99b0-4b68-83e4-257bf06e3609"
+  }
 }
