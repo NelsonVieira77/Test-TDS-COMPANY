@@ -1,22 +1,26 @@
-*{margin: 0; padding: 0; font-size: 20px; box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
 
-.tela-inicial{
+.tela-inicial {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
     flex-direction: column;
-
 }
 
-.fa-globe{
+.fa-globe {
     color: white;
     font-size: 100px;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-.cidades-1{
+.cidades-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +28,7 @@
     margin-left: 55px;
 }
 
-.cidades-2{
+.cidades-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,26 +37,27 @@
     margin-left: 55px;
 }
 
-
-h1{
-   color: white;
-   font-size: 40px;
+h1 {
+    color: white;
+    font-size: 40px;
 }
 
-p{
+p {
     color: white;
 }
 
-h6{
+h6 {
     color: white;
     margin-right: 45px;
 }
 
-@media (min-width: 320px) and (max-width: 480px){
-    .tela-inicial {flex-direction: column;}
-    h6{
-     margin-left: 18px;
-     margin-right: 18px;
+@media (min-width: 320px) and (max-width: 480px) {
+    .tela-inicial {
+        flex-direction: column;
     }
-  }
 
+    h6 {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+}
